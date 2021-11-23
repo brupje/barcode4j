@@ -27,7 +27,24 @@ This step requires apache fop 2.6
 2. Restart apache tomcat
 
 
+##  XSL-FO Example
 
+This example renders a barcode from a XML data
+
+```
+<fo:block>
+  <fo:instream-foreign-object>
+    <barcode:barcode xmlns:barcode="http://barcode4j.krysalis.org/ns"  orientation="0">
+          <xsl:attribute name="message">
+          <xsl:value-of select="BARCODE" />
+          </xsl:attribute>
+      <barcode:code128>
+        <barcode:height>16mm</barcode:height>
+      </barcode:code128>
+    </barcode:barcode>
+  </fo:instream-foreign-object>
+</fo:block>
+```                
 
 
 *************************************
