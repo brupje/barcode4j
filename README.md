@@ -1,6 +1,4 @@
-*************************************
-  Barcode4J
-*************************************
+# Barcode4J
 
 Barcode4J is a flexible generator for barcodes written in Java.
 
@@ -21,12 +19,7 @@ We would like to invite you to participate in the development of Barcode4J.
 The development mailing list is barcode4j-developers@lists.sourceforge.net
 
 
-*************************************
-
-Barcode4J is licensed under the the Apache License, Version 2.0.
-The license text can be found under legal/barcode4j.LICENSE.txt.
-
-# Installation in Tomcat
+## Installation in Tomcat
 
 This step requires apache fop 2.6
 
@@ -35,3 +28,9 @@ This step requires apache fop 2.6
 
 
 
+
+
+*************************************
+
+Barcode4J is licensed under the the Apache License, Version 2.0.
+The license text can be found under legal/barcode4j.LICENSE.txt.
