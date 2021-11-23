@@ -24,7 +24,8 @@ The development mailing list is barcode4j-developers@lists.sourceforge.net
 This step requires apache fop 2.6
 
 1. Copy barcode4j-fop-ext-complete.jar into <TOMCAT_ROOT>/webapps/fop/WEB-INF/lib
-2. Restart apache tomcat
+2. Place avalon-framework-impl-4.2.0.jar  into <TOMCAT_ROOT>/lib
+3. Restart apache tomcat
 
 
 ##  XSL-FO Example
