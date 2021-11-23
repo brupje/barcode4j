@@ -48,7 +48,7 @@ import org.apache.avalon.framework.configuration.ConfigurationException;
 import org.apache.xmlgraphics.image.loader.ImageContext;
 import org.apache.xmlgraphics.image.loader.ImageInfo;
 import org.apache.xmlgraphics.image.loader.ImageSize;
-import org.apache.xmlgraphics.image.loader.impl.AbstractImagePreloader;
+import org.apache.xmlgraphics.image.loader.spi.ImagePreloader;
 import org.apache.xmlgraphics.image.loader.util.ImageUtil;
 import org.apache.xmlgraphics.util.UnitConv;
 import org.apache.xmlgraphics.util.io.SubInputStream;
@@ -56,7 +56,7 @@ import org.apache.xmlgraphics.util.io.SubInputStream;
 /**
  * Image preloader for barcodes (barcode XML).
  */
-public class PreloaderBarcode extends AbstractImagePreloader {
+public class PreloaderBarcode implements ImagePreloader {
 
     /** {@inheritDoc} */
     public ImageInfo preloadImage(String uri, Source src, ImageContext context)
@@ -71,6 +71,8 @@ public class PreloaderBarcode extends AbstractImagePreloader {
         }
         return info;
     }
+    
+    public int getPriority() { return 1000; }
 
     private ImageInfo getImage(String uri, Source src,
             ImageContext context) throws IOException {
