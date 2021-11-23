@@ -25,3 +25,13 @@ The development mailing list is barcode4j-developers@lists.sourceforge.net
 
 Barcode4J is licensed under the the Apache License, Version 2.0.
 The license text can be found under legal/barcode4j.LICENSE.txt.
+
+# Installation in Tomcat
+
+This step requires apache fop 2.6
+
+1. Copy barcode4j-fop-ext-complete.jar into <TOMCAT_ROOT>/webapps/fop/WEB-INF/lib
+2. Restart apache tomcat
+
+
+
